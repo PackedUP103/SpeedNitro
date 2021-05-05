@@ -34,8 +34,8 @@ The second method is Server checking, this will call upon the IP of discord host
 ## Buy me a coffee?
 Please consider donating so i can work on more projects like this.
 
-Bitcoin = bc1qj4q6352ypmusyghyyp68q02l8hxvhvnyjnj39j
-Bitcoin Cash = bitcoincash:qq0344acxvjl9xy0vlftl38awjmg3mhz5qcwsgfsd5
-Xrdp = rBSPTqYrsSkjCwk8AUfpa3eVYczX4GDGmN
-Dodge Coin = DDZBYK8JdTA2umQnmpSH7n89pfqujdfXg1
-Ethereum = 0xE343279109A1Bf25f1A888E5B45c55EeD7245174
+- Bitcoin = bc1qj4q6352ypmusyghyyp68q02l8hxvhvnyjnj39j
+- Bitcoin Cash = bitcoincash:qq0344acxvjl9xy0vlftl38awjmg3mhz5qcwsgfsd5
+- Xrdp = rBSPTqYrsSkjCwk8AUfpa3eVYczX4GDGmN
+- Dodge Coin = DDZBYK8JdTA2umQnmpSH7n89pfqujdfXg1
+- Ethereum = 0xE343279109A1Bf25f1A888E5B45c55EeD7245174
