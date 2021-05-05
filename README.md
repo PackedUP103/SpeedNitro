@@ -2,7 +2,8 @@
 > The best premium Nitro Generator!
 --
 --
-Why should i trust SPEEDNITRO?
+
+## Why should i trust SPEEDNITRO?
 SPEEDNITRO is the only good nitro generator without a token grabber or malaware
 It is 90% trusted by 60 Anti-Virus engines (https://www.virustotal.com/gui/file/10e9657baa1a4a4f539b25a6b4ab5ac810844f16b6067e3b1422f070c1a8b1dc/detection)
 --
