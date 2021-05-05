@@ -1,0 +1,10 @@
+ctypes
+string
+threading
+subprocess
+colorama
+urllib3
+urllib
+json
+discord
+webbrowser
