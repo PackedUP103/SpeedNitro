@@ -1,0 +1,13 @@
+Release Info:
+Build Data And Changes:
+
+[Version 2.0] (Build: 2B4N00ML1T) (Source: Public)
+- Updated Crypto Donation Addresses
+- Updated UI
+- Fixed UI Bugs
+- Fixed "requirements.txt"
+- Support for Debian Based Kernels
+- Support for MacOS
+- Support for Debian Based Linux Distro's
+- Removed Junk Code
+- Removed Compiled Editions Of SpeedNitro

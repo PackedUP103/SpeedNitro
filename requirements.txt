@@ -3,6 +3,7 @@ string
 threading
 subprocess
 colorama
+requests
 urllib3
 urllib
 json
