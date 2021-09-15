@@ -31,12 +31,12 @@ The second method is Server checking, this will call upon the IP of discord host
 ## Buy me a coffee?
 Please consider donating so i can work on more projects like this.
 
-- Bitcoin = bc1qj4q6352ypmusyghyyp68q02l8hxvhvnyjnj39j
-- Bitcoin Cash = bitcoincash:qq0344acxvjl9xy0vlftl38awjmg3mhz5qcwsgfsd5
-- Xrdp = rBSPTqYrsSkjCwk8AUfpa3eVYczX4GDGmN
-- Dodge Coin = DDZBYK8JdTA2umQnmpSH7n89pfqujdfXg1
-- Ethereum = 0xE343279109A1Bf25f1A888E5B45c55EeD7245174
-- 
+- Bitcoin = bc1q7sx3cp4648ugluqcxfp60sazdzw5r056dmu4a2
+- XRP = rPRhrbrf6jfdquxTSrUCHiRFpdiP6ZxLSV
+- Dodge Coin = DKh3T77rfURKvWKqEMQQvMYFzYzWRciSo8
+- Ethereum = 0xbdf567D2BCA3BFD4fd71fddFF56ead3e4782557f
+- Monero = 44C5HM6FpBJ3UvAnb5ZsHhKPCkpX4YfGnKjGKg9QhbBgjXN3ZonE2cz3LkZ5V4LGrhNLGyPAXPikrTUC52j5Ms596DRmCMC
+
 ## Installation
 ```
 ~ Windows 7/8/10 ~
