@@ -4,7 +4,9 @@
 ## Why should i trust SPEEDNITRO?
 
 SPEEDNITRO is the only good nitro generator without a token grabber or malaware
-It is 90% trusted by 60 Anti-Virus engines (https://www.virustotal.com/gui/file/10e9657baa1a4a4f539b25a6b4ab5ac810844f16b6067e3b1422f070c1a8b1dc/detection)
+It is 100% Trusted by 57 Anti-Virus Programs!
+[https://www.virustotal.com/gui/file/a62bb205cda5f70f00fcf230d741946d2283082fe66544478f13a175b9414c43]
+The source is also public so you can look at what it does and what it runs.
 
 ## Why is it better then other options?
 
