@@ -28,7 +28,7 @@ The second method is Server checking, this will call upon the IP of discord host
 ## Multi-Scanning
 > SPEEDNITRO runs 3 scans for every byte file
 
-## Buy me a coffee?
+## Donate
 Please consider donating so i can work on more projects like this.
 
 - Bitcoin = bc1q7sx3cp4648ugluqcxfp60sazdzw5r056dmu4a2
